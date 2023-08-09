@@ -1,0 +1,157 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-links .social-icons a {
+    margin-left: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .search-bar input[type="text"] {
+        margin-bottom: 5px;
+    }
+
+    .hero {
+        padding: 30px 0;
+    }
+}
