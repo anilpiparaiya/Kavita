@@ -1,2 +1,2 @@
-# Kavita
+# Povita
 A Poetry Blog Website
